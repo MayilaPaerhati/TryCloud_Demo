@@ -42,7 +42,7 @@ public class FilesPage extends BasePage{
     @FindBy (css = "label[for='select_all_files']")
     public WebElement selectAllFilesCheckbox;
 
-    @FindBy (xpath = "(//table[@id='filestable'])[1]//tbody//td[@class='selection']//label")
+    @FindBy (xpath = "(//table[@id='filestable'])[1]//tbody//td//input")
     public List<WebElement> allFilesCheckboxes;
 
     @FindBy (id = "view13-input-folder")
