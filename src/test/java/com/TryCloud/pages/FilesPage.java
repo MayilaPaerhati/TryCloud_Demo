@@ -51,25 +51,20 @@ public class FilesPage extends BasePage{
     @FindBy (xpath = "(//input[@type='submit'])[2]")
     public WebElement submitNewFolderIcon;
 
+    @FindBy (xpath = "(//table[@id='filestable'])[1]//tbody//tr")
+    public List<WebElement> filesInSelectedFolder;
+
     @FindBy (xpath = "//div[@id='recommendations']//div[@class='file-name']")
     public List<WebElement> listOfRecentAdd;
+
+    @FindBy (xpath = "((//table[@id='filestable'])[1]//tbody//tr)[1]")
+    public WebElement firstFileInTheAllFilesList;
 
     @FindBy (xpath = "(//table[@id='filestable']//tbody//a[@class='action action-menu permanent'])[1]")
     public WebElement firstFileActionBtn;
 
     @FindBy (xpath = "(//table[@id='filestable'])[1]//tbody//tr[1]//span[@class='innernametext']")
     public WebElement nameOfFirstFile;
-
-
-//    public void clickAnyActionBtn(int i){
-//        String locator = "(//table[@id='filestable']//tbody//a[@class='action action-menu permanent'])[" + i + "]";
-//        Driver.getDriver().findElement(By.xpath(locator)).click();
-//    }
-
-//    public void getAnyFilesName(int i){
-//        String locator = "(//table[@id='filestable']//tbody//a[@class='action action-menu permanent'])[" + i + "]/../preceding-sibling::span[2]";
-//        Driver.getDriver().findElement(By.xpath(locator)).getText();
-//    }
 
     @FindBy (xpath = "//div[@class='fileActionsMenu popovermenu bubble open menu']//li")
     public List<WebElement> actionDropdown;

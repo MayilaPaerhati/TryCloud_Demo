@@ -64,8 +64,11 @@ public class Us10_StepDefs {
 
     @When("user uploads file with the upload file option")
     public void user_uploads_file_with_the_upload_file_option() {
+        BrowserUtils.sleep(2);
         filesPage.addIconBtn.click();
+        BrowserUtils.sleep(2);
         filesPage.selectFromListOfElements(filesPage.addIconDropdown, "Upload file");
+        BrowserUtils.sleep(2);
         filesPage.inputFile.sendKeys("/Users/dil/Downloads/apple.png");
 
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
