@@ -1,4 +1,4 @@
-@us04
+@us04 @completed @regression
 Feature: As a user, I should be able to access to Files module.
 
   Background:

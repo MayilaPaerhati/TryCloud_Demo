@@ -1,4 +1,4 @@
-@us06 @completed
+@us06 @completed @regression
 Feature: As a user, I should be able to remove files from favorites and upload a file directly
 
 

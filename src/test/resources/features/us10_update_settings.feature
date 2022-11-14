@@ -1,4 +1,4 @@
-@us10 @completed
+@us10 @completed @regression
 Feature: As a user, I should be able to update settings.
   User Story:
   As a user, I should be able to update settings.

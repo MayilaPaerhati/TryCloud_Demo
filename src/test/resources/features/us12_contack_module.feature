@@ -1,4 +1,4 @@
-@us12 @completed
+@us12 @completed @regression
 Feature: As a user, I should be able to access to Contacts module.
 
   # bug
@@ -9,12 +9,12 @@ Feature: As a user, I should be able to access to Contacts module.
 
 
  # Scenario Outline:
-    Given user use username "<username>" and passcode "<password>"
-    When the user clicks the "Contact" module
-    Then verify the page title is "Contacts - Trycloud QA"
+  #  Given user use username "<username>" and passcode "<password>"
+  #  When the user clicks the "Contact" module
+  #   Then verify the page title is "Contacts - Trycloud QA"
 
-    Examples:
-      | username | password    |
-      | user7    | Userpass123 |
-      | user34   | Userpass123 |
-      | user99   | Userpass123 |
+  #  Examples:
+    #  | username | password    |
+    #  | user7    | Userpass123 |
+    #  | user34   | Userpass123 |
+    #  | user99   | Userpass123 |
