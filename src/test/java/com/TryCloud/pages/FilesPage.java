@@ -78,11 +78,8 @@ public class FilesPage extends BasePage{
     @FindBy (xpath = "//div[@id = 'app-navigation']//li")
     public List<WebElement> appNavigition;
 
-    @FindBy (xpath = "(//table[@id='filestable'])[12]//tr//td[@class='filename']")
-    public List<WebElement> listOfDeletedFiles;
-
-    @FindBy (xpath = "(//span[@class='info'])[2]")
-    public WebElement infoInDeletedFiles;
+    @FindBy (xpath = "(//table[@id='filestable'])[12]//tr//span[@class='innernametext']")
+    public List<WebElement> nameOfDeletedFiles;
 
     @FindBy (id = "commentsTabView")
     public WebElement comments;
