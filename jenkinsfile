@@ -1,6 +1,6 @@
 node {
     stage('Clone code') {
-        git 'https://github.com/MayilaPaerhati/TryCloud_Demo.git'
+        git 'https://github.com/MayilaPaerhati/TryCloud_Demo'
         // change your repository
     }
 
